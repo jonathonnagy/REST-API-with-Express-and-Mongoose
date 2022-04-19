@@ -4,7 +4,7 @@ const Book = require('../model/book')
 // let User = require('../models/user.model');
 
 router.get("/books", async (req, res) => {
-	// const books = await Book.find()
+	const books = await Book.find()
 	res.send(books)
 })
 
